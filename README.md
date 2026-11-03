@@ -19,22 +19,3 @@
 | ЛР 9 | [Файл](https://github.com/raysewww-lang/mashynne-navchannia/blob/main/%D0%A8%D0%B8%D0%BD%D0%B4%D0%B8%D1%80_%D0%BF%D1%80_9.ipynb) | [Відкрити](https://colab.research.google.com/github/raysewww-lang/mashynne-navchannia/blob/main/%D0%A8%D0%B8%D0%BD%D0%B4%D0%B8%D1%80_%D0%BF%D1%80_9.ipynb) |
 | ЛР 10 | [Файл](https://github.com/raysewww-lang/mashynne-navchannia/blob/main/%D0%A8%D0%B8%D0%BD%D0%B4%D0%B8%D1%80_%D0%BF%D1%80_10.ipynb) | [Відкрити](https://colab.research.google.com/github/raysewww-lang/mashynne-navchannia/blob/main/%D0%A8%D0%B8%D0%BD%D0%B4%D0%B8%D1%80_%D0%BF%D1%80_10.ipynb) |
 
-Усі ноутбуки містять виконаний код, результати, графіки та висновки. Підготовлено за наданими методичками; локальне виконання всіх комірок перевірено у Python 3.12. ЛР 4 має окрему регресійну та класифікаційну частини. Додаткове завдання до ЛР 8 присвячене рекомендаційним системам з нуля. Однакові умови ЛР 9 і 10 виконано на MNIST та Fashion MNIST відповідно.
-
-## Запуск у Colab
-
-Натисніть «Відкрити» в таблиці, потім «Середовище виконання → Виконати все». Дані для табличних завдань автоматично завантажуються з data.zip у цьому репозиторії. Якщо завантаження недоступне, ноутбук запропонує завантажити архів вручну. Датасети зображень і ваги ImageNet завантажуються Keras. Для CNN бажано використовувати GPU.
-
-У ЛР 8 комірка з Google Drive попросить підключити диск; моделі зберігаються в MyDrive/Машинне навчання. Локально навчені моделі також включені до папки models у повному комплекті робіт.
-
-## Дані
-
-[Завантажити data.zip](https://github.com/raysewww-lang/mashynne-navchannia/raw/refs/heads/main/data.zip)
-
-Дані викладача: Titanic, Student Data, House Price. Додаткові джерела: [GDP 2024](https://en.wikipedia.org/w/index.php?oldid=1245669846), [Car Price](https://www.kaggle.com/datasets/hellbuoy/car-price-prediction), [MovieLens 100k](https://grouplens.org/datasets/movielens/100k/), вбудовані датасети scikit-learn та Keras. Ліцензійна інформація MovieLens збережена в data.zip.
-
-## Уточнення умов
-
-ЛР 1 завдання 1: через відсутність довжини і другого початкового значення прийнято 10 елементів і початок 1, 1. Завдання 3: простих чисел серед дійсних від 0 до 1 немає, тому результат 0%. У Breast Cancer використано правильне кодування sklearn: 0 — malignant, 1 — benign.
-
-Для CNN у ЛР 9–10 стратифіковано обрано 12000 train, 3000 validation та 3000 test; дві моделі кожної роботи порівнюються на однакових вибірках. У ЛР 8 використано повний Fashion MNIST. Криві test у ЛР 8 наведено для звітування, а підбір параметрів і зупинка залежать від validation.
